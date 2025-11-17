@@ -1,0 +1,64 @@
+@use "../../foundation/variable" as *;
+
+.p-result-list{
+    padding-block: 6.5rem 21rem;
+    @include mq("md"){
+        padding-block: 4.6rem 20.3rem;
+    }
+}
+
+.p-result-list__items{
+    margin-top: 3.9rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    column-gap: 10.6rem;
+    row-gap: 6.1rem;
+    @include mq("md"){
+        grid-template-columns: repeat(1 ,1fr);
+        row-gap: 4rem;
+    }
+}
+
+.p-result-item__img{
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 387/273;
+    @include mq("md"){
+        aspect-ratio: 335/200;
+    }
+}
+
+.p-result-item__img img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.p-result-item__tag{
+    width: 10rem;
+}
+
+.p-result-item__textarea{
+    margin-top: 2rem;
+}
+
+.p-result-item__title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.p-result-item__time{
+    font-size: 1.8rem;
+    line-height: calc(32/18);
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.p-result-list__paginations{
+    margin-top: 7.1rem;
+    @include mq("md"){
+        margin-top: 6rem;
+    }
+}

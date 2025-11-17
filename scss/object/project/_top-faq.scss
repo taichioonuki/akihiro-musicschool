@@ -1,0 +1,111 @@
+@use "../../foundation/variable" as *;
+
+.p-top-faq{
+    padding-block: 4.4rem 4.45rem;
+    @include mq("md"){
+        padding-block: 3.5rem;
+    }
+}
+
+.p-top-faq__lists{
+    margin-top: 3.6rem;
+    border-top: 0.5px solid $black ;
+    @include mq("md"){
+        margin-top: 3.9rem;
+    }
+}
+
+.p-top-faq__list{
+    border-bottom: 0.5px solid $black ;
+}
+
+.p-faq-list__question{
+    display: flex;
+    align-items: center;
+    padding-block: 1.5rem 1.45rem;
+    padding-inline: 2rem 4.5rem;/* 右の余白は文章が長くても矢印と被らない設計 */
+    cursor: pointer;
+    position: relative;
+    @include mq("md"){
+        padding-block: 1.25rem 1.2rem;
+        padding-inline: 0 4.5rem;
+    }
+}
+.p-faq-list__question::before {
+    position: absolute;
+    top: 46%;
+    right:  2.85rem;
+    transform: translateY(-50%) rotate(45deg);
+    scale: 0.71 1.047;
+    transform-origin: center;
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    border-right: 1px solid $black;
+    border-bottom: 1px solid $black;
+    transition: transform 0.3s;
+    @include mq("md"){
+        right: 1.4rem;
+    }
+}
+.js-accordion-button.is-active .p-faq-list__question::before {
+    transform: rotate(-135deg);
+}
+
+.p-faq-list__circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: $white;
+}
+
+.p-faq-list__q{
+    background-color: $black;
+}
+
+.p-faq-list__a{
+    background-color: $red;
+}
+
+.p-faq-list__title{
+    flex: 1;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    line-height: calc(30/17);
+    font-weight: $medium;
+    @include mq("md"){
+        margin-left: 2rem;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+    }
+}
+
+.p-faq-list__answer{
+    display: none;
+    background-color: rgba(203, 0, 0, 0.098);/* #CB0000 9.8% */
+    align-items: center;
+    padding-block: 1.5rem 1.5rem;
+    padding-inline: 2rem 4.5rem;/* 右の余白は文章が長くても矢印と被らない設計 */
+    @include mq("md"){
+        padding-block: 1.3rem 1.3rem;
+        padding-inline: 0 4.5rem;
+    }
+}
+
+.p-faq-list__text{
+    flex: 1;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    line-height: calc(30/17);
+    font-weight: $bold;
+    color: $red;
+    @include mq("md"){
+        margin-left: 2rem;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+    }
+}

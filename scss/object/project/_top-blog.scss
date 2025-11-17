@@ -1,0 +1,67 @@
+@use "../../foundation/variable" as *;
+
+.p-top-blog{
+    padding-block: 2.4rem 20.5rem;
+    @include mq("md"){
+        padding-block: 1.4rem 19rem;
+    }
+}
+
+.p-top-blog__cards{
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5rem;
+    @include mq("md"){
+        margin-top: 3.9rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.1rem;
+    }
+}
+
+.p-top-card__img{
+    aspect-ratio: 260/200;
+    position: relative;
+    overflow: hidden;
+    @include mq("md"){
+        aspect-ratio: 335/200;
+    }
+}
+
+.p-top-card__img img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.p-top-card__title{
+    margin-top: 2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    @include mq("md"){
+        margin-top: 3rem;
+    }
+}
+
+.p-top-card__time{
+    margin-top: 1.1rem;
+    text-align: right;
+    @include mq("md"){
+        margin-top: 0.6rem;
+    }
+}
+
+.p-top-blog__more{
+    margin-top: 3.7rem;
+    text-align: right;
+    @include mq("md"){
+        text-align: center;
+    }
+}
+
+.p-top-blog__link{
+    color: $black;
+    border-bottom: 0.5px solid $black ;
+}

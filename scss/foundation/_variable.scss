@@ -1,0 +1,55 @@
+@use "sass:math";
+
+// 文字フォントの種類
+$base-font: "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+
+// 文字の太さ
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+
+// 色
+$white: #fff;
+$black: #000;
+$gray-bread: #E8E8E8;
+$gray-text: #B2B2B2;
+$red: #CB0000;
+$green: #4D9600;
+$green02: #55A500;
+
+
+
+//ブレイクポイントの値
+$breakpoints: (
+  sp: 375,
+  md: 767,
+  lg: 1024,
+  xl: 1440,
+);
+
+//メディアクエリー
+$mediaqueries: (
+  sp: "screen and (max-width: #{map-get($breakpoints,'sp')}px)",
+  md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// ブレイクポイントの設定
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaqueries, $mediaquery)} {
+    @content;
+  }
+}
+
+// vw関数
+@function vw($pixelSize, $baseWidth: 880) {
+  @return calc($pixelSize / $baseWidth * 100vw);
+}
+
+@function hvw($pixelSize) {
+  @return min(calc($pixelSize / 880 * 100vw), $pixelSize * 1px);
+}

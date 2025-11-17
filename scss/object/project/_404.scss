@@ -1,0 +1,39 @@
+@use "../../foundation/variable" as *;
+
+.p-404__textarea{
+    padding-block: 6.8rem 9rem;
+    @include mq("md"){
+        padding-block: 4.7rem 5rem;
+    }
+}
+
+.p-404__text{
+    text-align: center;
+    @include mq("md"){
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+        text-align: left;
+    }
+}
+
+.p-404__button{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    @include mq("md"){
+        margin-top: 0.9rem;
+    }
+}
+
+.p-404__link{
+    width: 25rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    font-weight: $bold;
+    padding-top: 0.2rem;
+    @include mq("md"){
+        width: 100%;
+        max-width: 335px;
+        font-size: 2rem;
+    }
+}

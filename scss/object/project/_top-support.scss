@@ -1,0 +1,22 @@
+@use "../../foundation/variable" as *;
+
+.p-top-support{
+    padding-block: 6.8rem 6rem;
+    background-color: $red;
+    @include mq("md"){
+        padding-block: 4.9rem 4rem;
+    }
+}
+
+.p-top-support__title{
+    color: $white;
+}
+
+.p-top-support__text{
+    margin-top: 3rem;
+    text-align: center;
+    color: $white;
+    @include mq("md"){
+        margin-top: 1.4rem;
+    }
+}

@@ -1,0 +1,102 @@
+@use "../../foundation/variable" as *;
+
+.p-top-flow{
+    padding-block: 3.4rem 6.4rem;
+    @include mq("md"){
+        padding-block: 4.6rem 2rem;
+    }
+}
+
+.p-top-flow__list{
+    position: relative;
+    margin-top: 5.3rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.8rem;
+    @include mq("md"){
+        margin-top: 3.6rem;
+        margin-left: 0.8rem;
+        row-gap: 3.6rem;
+    }
+}
+
+.p-top-flow__list::before{
+    content: "";
+    top: 1.65rem;
+    left: 1rem;
+    transform: translateX(-50%);
+    display: block;
+    position: absolute;
+    width: 0.3rem;
+    height: 100%;
+    background-color: $red;
+    @include mq("md"){
+        height: calc(100% - 2.65rem);
+    }
+}
+
+.p-top-flow__list::after{
+    content: "";
+    bottom: -1.5rem;
+    left: 1rem;
+    transform: translateX(-50%) rotate(45deg);
+    display: block;
+    position: absolute;
+    width: 2.58rem;
+    height: 2.58rem;
+    border-right: 0.3rem solid $red;
+    border-bottom: 0.3rem solid $red;
+    @include mq("md"){
+        bottom: 1.4rem;
+    }
+}
+
+.p-top-flow__item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 3rem;
+    @include mq("md"){
+        flex-direction: column;
+        row-gap: 0.9rem;
+    }
+}
+
+.p-flow-item__title{
+    width: 23.2rem;
+    font-size: 2.2rem;
+    line-height: calc(33/22);
+    font-weight: $bold;
+    color: $red;
+    display: flex;
+    align-items: center;
+    @include mq("md"){
+        width: 100%;
+    }
+}
+
+.p-flow-item__circle{
+    margin-right: 5rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: $red;
+    @include mq("md"){
+        margin-right: 2rem;
+    }
+}
+
+.p-flow-item__name{
+    flex: 1;
+}
+
+.p-flow-item__text{
+    flex: 1;
+    @include mq("md"){
+        margin-left: 4rem;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+    }
+}
+

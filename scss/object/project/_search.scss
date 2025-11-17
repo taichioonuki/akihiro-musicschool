@@ -1,0 +1,39 @@
+@use "../../foundation/variable" as *;
+
+.p-search{
+    padding-top: hvw(80);
+    @include mq("md"){
+        padding-top: 5rem;
+    }
+}
+
+.p-search-list{
+    padding-block: 6.6rem 21rem;
+    @include mq("md"){
+        padding-block: 3.6rem 20.3rem;
+    }
+}
+
+.p-search-list__items{
+    margin-top: 4rem;
+    @include mq("md"){
+        margin-top: 4.2rem;
+    }
+}
+
+
+.p-search-list__results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-search-list__title{
+    font-size: 1.8rem;
+    line-height: calc(30/18);
+    font-weight: $medium;
+}
+
+.p-search-list__keyword{
+    font-weight: $bold;
+}

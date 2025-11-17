@@ -1,0 +1,24 @@
+@use "../foundation/variable" as *;
+
+.l-inner{
+    max-width: 920px;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
+.l-two-column{
+    display: grid;
+    grid-template-columns: 1fr 25rem;
+    column-gap: 3rem;
+    @include mq("md"){
+        grid-template-columns: 100%;
+        row-gap: 3.2rem;
+    }
+}
+
+.l-sidebar-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+

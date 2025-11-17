@@ -1,0 +1,236 @@
+@use "../../foundation/variable" as *;
+
+// plan-price
+.p-plan-price{
+    padding-top: 6.6rem;
+    @include mq("md"){
+        padding-top: 4.7rem;
+    }
+}
+
+.p-plan-price__contents{
+    margin-top: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    @include mq("md"){
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+.p-plan-price__content{
+    width: 21rem;
+    height: 6rem;
+    font-size: 2rem;
+    font-weight: $bold;
+}
+
+.p-plan-price__plus{
+    position: relative;
+    width: 1.85rem;
+    height: 1.85rem;
+}
+
+.p-plan-price__plus::before,
+.p-plan-price__plus::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $black;
+    display: block;
+}
+
+.p-plan-price__plus::before{
+    width: 1.85rem;
+    height: 0.3rem;
+}
+
+.p-plan-price__plus::after{
+    width: 0.3rem;
+    height: 1.85rem;
+}
+
+.p-plan-price__text{
+    margin-top: 4.8rem;
+    @include mq("md"){
+        margin-top: 4.7rem;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+    }
+}
+
+.p-plan-table{
+    padding-block: 5.7rem 22.3rem;
+    @include mq("md"){
+        padding-block: 3.9rem 18.6rem;
+    }
+}
+
+.p-plan-table__container{
+    margin-top: 4.8rem;
+    @include mq("md"){
+        margin-top: 1.4rem;
+        table-layout: fixed;
+        // -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+    }
+}
+
+.p-plan-table__container::-webkit-scrollbar{
+    height: 2.4rem;
+}
+
+.p-plan-table__container::-webkit-scrollbar-thumb {
+    background: rgba(80, 80, 80, 0.251);
+}
+
+.p-plan-table__container::-webkit-scrollbar-track {
+    background: rgba(80, 80, 80, 0.149);
+}
+
+/* 横スクロールバー全体 */
+.p-plan-table__container .simplebar-track.simplebar-horizontal {
+    height: 2.5rem ;
+    background: rgba(80, 80, 80, 0.149) ;
+    border-radius: 0 ;
+    left: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    display: flex ;
+    align-items: center ;
+}
+
+/* サムバー（現在地バー） */
+.p-plan-table__container .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+    height: 2.3rem ;
+    width: auto;
+    background-color: rgba(80, 80, 80, 0.251) ;
+    border-radius: 0 ;
+    top: 50% ;
+    transform: translateY(-50%) ;
+}
+
+.p-plan-table__list{
+    width: 100%;
+    border-bottom: 1px solid $black;
+    @include mq("md"){
+        min-width: 67rem;
+        margin-bottom: 1.7rem;
+    }
+}
+
+.p-plan-table__list.is-ios {
+    @include mq("md"){
+        margin-bottom: 4.2rem; // iOSのみ
+    }
+}
+
+.p-table-head{
+    width: 100%;
+    height: 8rem;
+    font-size: 2rem;
+    line-height: calc(33/20);
+    color: $white;
+    border-bottom: 1px solid $black;
+    @include mq("md"){
+        height: 6.6rem;
+        line-height: calc(25/20);
+    }
+}
+
+.p-table-head__thin{
+    width: 25%;
+    vertical-align: bottom;
+}
+
+.p-table-head__black{
+    height: 5rem;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq("md"){
+        height: 6.6rem;
+    }
+}
+
+.p-table-head__red{
+    width: 25%;
+    background-color: $red;
+    @include mq("md"){
+        padding-block: 0.5rem;
+    }
+}
+
+.p-table-head__small{
+    font-size: 1.7rem;
+    line-height: calc(33/17);
+    @include mq("md"){
+        line-height: calc(25/17);
+    }
+}
+
+.p-table-body{
+    height: 8.5rem;
+    font-size: 1.7rem;
+    line-height: calc(25/17);
+    @include mq("md"){
+        font-size: 1.6rem;
+        line-height: calc(25/16);
+    }
+}
+
+.p-table-body__gray{
+    background-color: rgba(80, 80, 80, 0.149);
+}
+
+.p-table-body:first-child{
+    font-weight: $bold;
+}
+
+.p-table-body__category{
+    padding-left: 2rem;
+    @include mq("md"){
+        padding-left: 1rem;
+    }
+}
+
+.p-table-body__item{
+    text-align: center;
+    border-left: 1px solid $black;
+}
+
+.p-table-body__price{
+    font-size: 2.2rem;
+    line-height: calc(33/22);
+}
+
+.p-table-body__red{
+    color: $red;
+}
+
+.p-table-body__line{
+    display: inline-block;
+    width: 3rem;
+    height: 1px;
+    background-color: #707070;
+    vertical-align: middle;
+}
+
+.p-plan-table__text{
+    margin-top: 2.8rem;
+    font-size: 1.7rem;
+    line-height: calc(25/17);
+    @include mq("md"){
+        margin-top: 1.8rem;
+        font-size: 1.6rem;
+        line-height: calc(30/16);
+    }
+}
+
+
+

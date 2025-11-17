@@ -1,0 +1,125 @@
+@use "../../foundation/variable" as *;
+
+.p-top-message{
+    padding-block: 6.6rem 5.552rem;
+    @include mq("md"){
+        padding-block: 4.6rem 3.3rem;
+    }
+}
+
+.p-top-message__inner{
+    max-width: 898px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.p-top-message__title{
+    font-size: 3.5rem;
+    font-weight: $bold;
+    line-height: calc(50/35);
+    color: $red;
+    text-align: center;
+    @include mq("md"){
+        font-size: 2.5rem;
+        line-height: calc(40/25);
+    }
+}
+
+.p-top-message__text{
+    margin-top: 1.8rem;
+    text-align: center;
+    @include mq("md"){
+        margin-top: 0.7rem;
+    }
+}
+
+.p-top-message__img{
+    margin-top: 3.3rem;
+    margin-inline: auto;
+    width: 85.8rem;
+    @include mq("md"){
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+
+.p-top-message__items{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
+    @include mq("md"){
+        margin-top: 3.5rem;
+    }
+}
+
+.p-top-message__item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2rem 1fr;
+    justify-content: center;
+    column-gap: 3rem;
+    margin-inline: auto;
+}
+
+.p-message-item__en{
+    font-size: 2.5rem;
+    line-height: calc(50/25);
+    font-weight: $bold;
+    color: $red;
+    text-align: right;
+    @include mq("md"){
+        font-size: 2rem;
+        line-height: calc(50/20);
+    }
+}
+
+.p-message-item__circle{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: $red;
+}
+
+.p-message-item:last-child .p-message-item__circle::before{
+    content: "";
+    top: -17.2rem; /* 矢印長さ18.5emー円の半径1remー矢印太さ0.3rem */
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    display: block;
+    position: absolute;
+    width: 2.58rem;
+    height: 2.58rem;
+    border-right: 0.3rem solid $red;
+    border-top: 0.3rem solid $red;
+    @include mq("md"){
+        top: -17.8rem;
+    }
+}
+
+.p-message-item:last-child .p-message-item__circle::after{
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -100%);
+    display: block;
+    position: absolute;
+    width: 0.3rem;
+    height: 18.5rem;
+    background-color: $red;
+    @include mq("md"){
+        height: 19.1rem;
+    }
+}
+
+.p-message-item__ja{
+    font-size: 2.3rem;
+    line-height: calc(50/23);
+    text-align: left;
+    @include mq("md"){
+        font-size: 2rem;
+        line-height: calc(50/20);
+    }
+}
+

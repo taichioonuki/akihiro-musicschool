@@ -1,0 +1,126 @@
+@use "../../foundation/variable" as *;
+
+.p-top-voice{
+    padding-block: 4.4rem 8rem;
+    background-color: $red;
+    @include mq("md"){
+        padding-block: 4.6rem 5rem;
+    }
+}
+
+.p-top-voice__inner{
+    max-width: 1036px;
+    padding-inline: 6.1rem;
+    @include mq("md"){
+        padding-inline: 2rem;
+    }
+}
+
+.p-top-voice__title{
+    color: $white;
+}
+
+.p-top-voice__slider{
+    margin-top: 3.6rem;
+    position: relative;
+    @include mq("md"){
+        margin-top: 3.9rem;
+    }
+}
+
+.p-slider__item {
+    display: block;
+    margin-inline: 1.75rem;
+    @include mq(md){
+        margin-inline: 0;
+    }
+}
+
+.p-slider__img {
+    width: 100%;
+    aspect-ratio: 270/190;
+    overflow: hidden;
+    @include mq("md"){
+        aspect-ratio: 335/200;
+    }
+}
+
+.p-slider__img img{
+    transition: scale 0.3s;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (hover: hover){
+    .p-slider__item:hover{
+        opacity: 1;
+    }
+    .p-slider__item:hover .p-slider__img img{
+        scale: 1.1;
+    }
+}
+
+.p-slider__title {
+    margin-top: 1.7rem;
+    font-size: 2.2rem;
+    line-height: calc(33/22);
+    font-weight: $bold;
+    text-align: center;
+    color: $white;
+    @include mq("md"){
+        margin-top: 2.7rem;
+    }
+}
+
+.p-slider__text {
+    margin-top: 1rem;
+    color: $white;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+// スライダー
+.p-slider__prev,
+.p-slider__next{
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    margin-top: -1px;
+    z-index: 100;
+    @include mq("md"){
+        top: 41%;
+        margin-top: 0;
+    }
+}
+
+.p-slider__prev{
+    left: -2.7rem;
+    @include mq("md"){
+        left: 0;
+    }
+}
+
+.p-slider__next{
+    right: -2.7rem;
+    @include mq("md"){
+        right: 0;
+    }
+}
+
+.p-slider__prev img,
+.p-slider__next img{
+    transition: filter 0.3s;
+}
+
+@media (hover: hover) {
+    .p-slider__prev:hover img,
+    .p-slider__next:hover img{
+        filter: brightness(0);
+    }
+}

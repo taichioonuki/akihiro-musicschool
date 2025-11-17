@@ -1,0 +1,73 @@
+@use "../foundation/variable" as *;
+
+.footer{
+    padding-block: 4.4rem 4.8rem;
+    background-color: $red;
+    @include mq("md"){
+        padding-block: 4.4rem 5rem;
+    }
+}
+
+.footer__inner{
+    max-width: 782px;
+}
+
+.footer__nav-items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.3rem;
+    row-gap: 5px;
+    text-align: center;
+    justify-content: center;
+    @include mq("md"){
+        column-gap: 3rem;
+    }
+}
+
+.footer__link{
+    font-size: 1.7rem;
+    font-weight: $bold;
+    line-height: calc(33/17);
+    color: $white;
+}
+
+.footer__name{
+    display: block;
+    margin-top: 2.2rem;
+    margin-inline: auto;
+    width: 3.2rem;
+    @include mq("md"){
+        margin-top: 1.9rem;
+    }
+}
+
+.footer__copyright{
+    margin-top: 2.3rem;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: $medium;
+    line-height: calc(33/15);
+    color: $white;
+    @include mq("md"){
+        margin-top: 2.9rem;
+        line-height: calc(20/15);
+        margin-inline: -1rem;
+    }
+}
+
+.footer__icons{
+    margin-top: -0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2rem;
+    @include mq("md"){
+        margin-top: 1.6rem;
+    }
+}
+
+.footer__icon-link{
+    display: block;
+}
