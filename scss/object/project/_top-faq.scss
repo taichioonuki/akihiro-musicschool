@@ -90,6 +90,7 @@
     align-items: center;
     padding-block: 1.5rem 1.5rem;
     padding-inline: 2rem 4.5rem;/* 右の余白は文章が長くても矢印と被らない設計 */
+    cursor: pointer;
     @include mq("md"){
         padding-block: 1.3rem 1.3rem;
         padding-inline: 0 4.5rem;

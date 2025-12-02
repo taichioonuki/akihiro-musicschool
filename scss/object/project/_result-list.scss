@@ -1,5 +1,11 @@
 @use "../../foundation/variable" as *;
 
+.p-result-fv__img::after{
+    content: none;
+    background: none;
+    mix-blend-mode: normal;
+}
+
 .p-result-list{
     padding-block: 6.5rem 21rem;
     @include mq("md"){
@@ -35,7 +41,7 @@
 }
 
 .p-result-item__tag{
-    width: 10rem;
+    min-width: 10rem;
 }
 
 .p-result-item__textarea{

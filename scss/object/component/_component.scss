@@ -41,14 +41,15 @@
     font-size: 1.5rem;
     line-height: calc(25/15);
     font-weight: $bold;
+    min-height: 3rem;
     padding-top: 0.1rem;
+    padding-inline: 0.5rem;
 }
 
 .c-blog-tag{
-    width: 8rem;
-    height: 3rem;
+    min-width: 8rem;
     @include mq("md"){
-        width: 9rem;
+        min-width: 9rem;
     }
 }
 
@@ -78,10 +79,9 @@
 }
 
 .c-result-tag{
-    width: 10rem;
-    height: 3rem;
+    min-width: 10rem;
     @include mq("md"){
-        width: 8rem;
+        min-width: 8rem;
     }
 }
 
@@ -91,8 +91,8 @@
     position: fixed;
     bottom: 9.1rem;
     right: 11.6rem;
-    width: 68px;
-    height: 68px;
+    width: 6.8rem;
+    height: 6.8rem;
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
     z-index: 1000;
@@ -102,8 +102,6 @@
     @include mq("md"){
         right: 2rem;
         bottom: 7.8rem;
-        width: 6.8rem;
-        height: 6.8rem;
     }
 }
 
@@ -128,15 +126,11 @@
     position: absolute;
     display: block;
     content: "";
-    width: 30px;
-    height: 24px;
+    width: 3rem;
+    height: 2.4rem;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    @include mq("md"){
-        width: 3rem;
-        height: 2.4rem;
-    }
 }
 
 // contact-button
@@ -182,9 +176,22 @@
 .c-sub-fv__img{
     aspect-ratio: 1080/200;
     overflow: hidden;
+    position: relative;
     @include mq("md"){
         aspect-ratio: 375/300;
     }
+}
+
+.c-sub-fv__img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.4863); /* #505050 50.2%透過 */
+    mix-blend-mode: multiply;
+    pointer-events: none;
 }
 
 .c-sub-fv__img img{
@@ -194,7 +201,7 @@
 }
 
 .c-sub-fv__contents{
-    padding-top: 9px;
+    padding-top: 0.9rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -203,7 +210,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(80, 80, 80, 0.502); /* #505050 50.2%透過 */
 }
 
 .c-sub-fv__title{
@@ -227,10 +233,17 @@
     column-gap: 1.9rem;
     overflow-x: auto;
     white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     @include mq("md"){
         height: 3.6rem;
     }
 }
+
+.c-breadcrumb__list::-webkit-scrollbar {
+    display: none;
+}
+
 
 .c-breadcrumb__item{
     height: 100%;

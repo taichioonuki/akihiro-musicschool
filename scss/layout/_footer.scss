@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 3.3rem;
-    row-gap: 5px;
+    row-gap: 0.5rem;
     text-align: center;
     justify-content: center;
     @include mq("md"){
@@ -26,6 +26,7 @@
 }
 
 .footer__link{
+    display: block;
     font-size: 1.7rem;
     font-weight: $bold;
     line-height: calc(33/17);

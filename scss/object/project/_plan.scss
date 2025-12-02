@@ -135,11 +135,14 @@
     font-size: 2rem;
     line-height: calc(33/20);
     color: $white;
-    border-bottom: 1px solid $black;
     @include mq("md"){
         height: 6.6rem;
         line-height: calc(25/20);
     }
+}
+
+.p-table-head__cell:first-child{
+    border-bottom: 1px solid $black;
 }
 
 .p-table-head__thin{
