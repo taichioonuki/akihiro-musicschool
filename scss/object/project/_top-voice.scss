@@ -37,7 +37,6 @@
 }
 
 .p-slider__img {
-    width: 100%;
     aspect-ratio: 270/190;
     overflow: hidden;
     @include mq("md"){

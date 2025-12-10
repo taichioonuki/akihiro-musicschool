@@ -6,7 +6,6 @@ html {
     font-size: vw(10, 980);
   }
   @include mq("md") {
-    // font-size: vw(10, 375);
     font-size: 10px;
   }
   @include mq("sp"){
@@ -69,7 +68,7 @@ a {
     display: none;
 }
 
-//　ドロワー表示時のスクロール防止
+//ドロワー表示時のスクロール防止
 html.no-scroll,
 body.no-scroll {
     overflow: hidden;

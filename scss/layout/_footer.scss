@@ -8,12 +8,7 @@
     }
 }
 
-.footer__inner{
-    max-width: 782px;
-}
-
 .footer__nav-items{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 3.3rem;
@@ -71,4 +66,20 @@
 
 .footer__icon-link{
     display: block;
+}
+
+.footer__icon-twitter .footer__icon-link{
+    width: 2.3rem;
+}
+
+.footer__icon-facebook .footer__icon-link{
+    width: 2.3rem;
+}
+
+.footer__icon-youtube .footer__icon-link{
+    width: 2.3rem;
+}
+
+.footer__icon-instagram .footer__icon-link{
+    width: 2rem;
 }

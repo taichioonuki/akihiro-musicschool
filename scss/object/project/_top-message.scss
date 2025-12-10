@@ -82,21 +82,55 @@
     background-color: $red;
 }
 
-.p-message-item:last-child .p-message-item__circle::before{
+.p-message-item:first-child .p-message-item__circle::before{
     content: "";
-    top: -17.2rem; /* 矢印長さ18.5emー円の半径1remー矢印太さ0.3rem */
-    left: 50%;
+    top: -3.2rem; /* 矢印長さ18.5emー円の半径1remー矢印太さ0.3rem */
+    left: 9%;
     transform: translateX(-50%) rotate(-45deg);
     display: block;
     position: absolute;
     width: 2.58rem;
-    height: 2.58rem;
-    border-right: 0.3rem solid $red;
-    border-top: 0.3rem solid $red;
+    height: 3px;
+    background-color: $red;
+    border-top-left-radius: 1.5px;
+    border-bottom-left-radius: 1.5px;
     @include mq("md"){
-        top: -17.8rem;
+        top: -3.8rem;
     }
 }
+
+.p-message-item:first-child .p-message-item__circle::after{
+    content: "";
+    top: -3.2rem; /* 矢印長さ18.5emー円の半径1remー矢印太さ0.3rem */
+    left: 92%;
+    transform: translateX(-50%) rotate(45deg);
+    display: block;
+    position: absolute;
+    width: 2.58rem;
+    height: 3px;
+    background-color: $red;
+    border-top-right-radius: 1.5px;
+    border-bottom-right-radius: 1.5px;
+    @include mq("md"){
+        top: -3.8rem;
+    }
+}
+
+// .p-message-item:last-child .p-message-item__circle::before{
+//     content: "";
+//     top: -17.2rem; /* 矢印長さ18.5emー円の半径1remー矢印太さ0.3rem */
+//     left: 50%;
+//     transform: translateX(-50%) rotate(-45deg);
+//     display: block;
+//     position: absolute;
+//     width: 2.58rem;
+//     height: 2.58rem;
+//     border-right: 0.3rem solid $red;
+//     border-top: 0.3rem solid $red;
+//     @include mq("md"){
+//         top: -17.8rem;
+//     }
+// }
 
 .p-message-item:last-child .p-message-item__circle::after{
     content: "";

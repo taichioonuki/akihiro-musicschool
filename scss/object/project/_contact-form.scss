@@ -105,7 +105,6 @@
 }
 
 .p-form-data__checkbox{
-    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -177,7 +176,7 @@
 .p-form__textarea {
     font-size: 1.8rem;
     min-height: 30rem;
-    resize: vertical;
+    resize: none;
     display: block;
     line-height: calc(30/18);
     padding: 1.25rem 1.95rem;

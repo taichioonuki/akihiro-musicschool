@@ -35,21 +35,23 @@
     position: absolute;
     top: 46%;
     right:  2.85rem;
-    transform: translateY(-50%) rotate(45deg);
-    scale: 0.71 1.047;
-    transform-origin: center;
     content: "";
     width: 1.4rem;
     height: 1.4rem;
-    border-right: 1px solid $black;
-    border-bottom: 1px solid $black;
-    transition: transform 0.3s;
+    background-image: url(../images/top/top-faq-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s , top 0.3s ;
     @include mq("md"){
         right: 1.4rem;
     }
 }
 .js-accordion-button.is-active .p-faq-list__question::before {
-    transform: rotate(-135deg);
+    transform: rotate(-180deg);
+    top: 35%;
+    @include mq("md"){
+        top: 42%;
+    }
 }
 
 .p-faq-list__circle{
