@@ -6,7 +6,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    height: hvw(80);
+    height: 8rem;
     background-color: $white;
     transition: background-color 0.3s;
     @include mq("md"){

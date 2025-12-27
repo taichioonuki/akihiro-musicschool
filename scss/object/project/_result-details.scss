@@ -1,12 +1,5 @@
 @use "../../foundation/variable" as *;
 
-.p-result-details{
-    padding-top: hvw(80);
-    @include mq("md"){
-        padding-top: 5rem;
-    }
-}
-
 .p-result-details__section{
     padding-block: 7rem 15.7rem;
     @include mq("md"){

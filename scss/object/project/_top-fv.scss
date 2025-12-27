@@ -1,11 +1,7 @@
 @use "../../foundation/variable" as *;
 
 .p-top-fv{
-    margin-top: hvw(80);
     position: relative;
-    @include mq("md"){
-        margin-top: 5rem;
-    }
 }
 
 .p-top-fv__img{

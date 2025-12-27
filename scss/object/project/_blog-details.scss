@@ -1,12 +1,5 @@
 @use "../../foundation/variable" as *;
 
-.p-blog-details{
-    padding-top: hvw(80);
-    @include mq("md"){
-        padding-top: 5rem;
-    }
-}
-
 .p-blog-details__inner{
     padding-block: 7rem 18.7rem;
     @include mq("md"){
@@ -62,14 +55,17 @@
     justify-content: center;
     column-gap: 1rem;
     color: $white;
-    @include mq("md"){
-        flex: 1;
-    }
+    // @include mq("md"){
+    //     flex: 1;
+    // }
 }
 
 .p-sns__facebook{
     width: 10.5rem;
     background-color: #425893;
+    @include mq("md"){
+        width: 6.5rem;
+    }
 }
 
 .p-facebook__icon{
@@ -79,6 +75,9 @@
 .p-sns__twitter{
     width: 8.8rem;
     background-color: #4A9FEB;
+    @include mq("md"){
+        width: 6.5rem;
+    }
 }
 
 .p-twitter__icon{
@@ -88,6 +87,9 @@
 .p-sns__hatena{
     width: 9.3rem;
     background-color: #4EACD5;
+    @include mq("md"){
+        width: 6.5rem;
+    }
 }
 
 .p-hatena__icon{
@@ -97,6 +99,9 @@
 .p-sns__line{
     width: 8.1rem;
     background-color: #52B534;
+    @include mq("md"){
+        width: 6.5rem;
+    }
 }
 
 .p-line__icon{
@@ -106,6 +111,9 @@
 .p-sns__pocket{
     width: 9.1rem;
     background-color: #DC4F5A;
+    @include mq("md"){
+        width: 6.5rem;
+    }
 }
 
 .p-pocket__icon{
@@ -133,6 +141,10 @@
         margin-block: 3.9rem 1.7rem;
         line-height: calc(30/20);
     }
+}
+
+.p-blog-body__text{
+    margin-block: 1.5rem;
 }
 
 .p-blog-body__img{
@@ -212,6 +224,9 @@
     width: 0.3rem;
     height: calc(100% - 2rem);
     background-color: $black;
+    @include mq("md"){
+        height: calc(100% - 1rem);
+    }
 }
 
 .p-blog-body__blockquote{

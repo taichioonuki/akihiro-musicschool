@@ -16,6 +16,7 @@
 
 .p-reason-item{
     display: flex;
+    align-items: flex-start;
     @include mq("md"){
         flex-direction: column;
     }
