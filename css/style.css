@@ -245,7 +245,7 @@ header {
 .header__name-link {
   height: inherit;
   position: relative;
-  padding-left: min(4.7727272727vw, 42px);
+  padding-left: 4.2rem;
   font-size: 2rem;
   font-weight: 700;
   color: #000;
