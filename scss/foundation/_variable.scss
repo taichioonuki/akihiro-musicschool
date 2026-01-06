@@ -49,7 +49,3 @@ $mediaqueries: (
 @function vw($pixelSize, $baseWidth: 880) {
   @return calc($pixelSize / $baseWidth * 100vw);
 }
-
-@function hvw($pixelSize) {
-  @return min(calc($pixelSize / 880 * 100vw), $pixelSize * 1px);
-}

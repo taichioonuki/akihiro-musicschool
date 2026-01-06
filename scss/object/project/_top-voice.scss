@@ -10,9 +10,9 @@
 
 .p-top-voice__inner{
     max-width: 986px;
-    padding-inline: 3.6rem;
+    padding-inline: 36px;
     @include mq("md"){
-        padding-inline: 2rem;
+        padding-inline: 20px;
     }
 }
 

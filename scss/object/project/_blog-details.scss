@@ -153,6 +153,9 @@
     @include mq("md"){
         margin-block: 3.9rem 2.7rem;
     }
+    @include mq("sp"){
+        width: 100%;
+    }
 }
 
 .p-show-text{
@@ -283,22 +286,13 @@
 // ブログ記事ページネーション
 .p-blog-details__paginations{
     margin-top: 5.4rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     column-gap: 7.9rem;
     justify-content: space-between;
     @include mq("md"){
         margin-top: 4.5rem;
         column-gap: 2.2rem;
-    }
-}
-
-.p-blog-details__pagination{
-    width: 26rem;
-    @include mq("md"){
-        width: calc(100% * 156/335);
-    }
-    @include mq("sp"){
-        width: 15.6rem;
     }
 }
 
