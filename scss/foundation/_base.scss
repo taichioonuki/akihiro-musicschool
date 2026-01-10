@@ -2,9 +2,8 @@
 
 html {
   font-size: 10px;
-  // スクロールバー幅を考慮して920px+20pxに設定
-  @media (min-width: 768px) and (max-width: 940px) {
-    font-size: vw(10, 940);
+  @media (min-width: 768px) and (max-width: 920px) {
+    font-size: vw(10, 920);
   }
   @include mq("md") {
     font-size: 10px;

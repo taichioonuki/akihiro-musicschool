@@ -31,6 +31,9 @@
 .p-slider__item {
     display: block;
     margin-inline: 1.75rem;
+    @media (min-width: 768px) and (max-width: 920px) {
+        margin-inline: 1.25rem;
+    }
     @include mq(md){
         margin-inline: 0;
     }
@@ -74,6 +77,10 @@
     @include mq("md"){
         margin-top: 2.7rem;
     }
+}
+
+.p-slider__name{
+    display: inline-block;
 }
 
 .p-slider__text {

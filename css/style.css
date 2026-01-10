@@ -2,9 +2,9 @@
 html {
   font-size: 10px;
 }
-@media (min-width: 768px) and (max-width: 940px) {
+@media (min-width: 768px) and (max-width: 920px) {
   html {
-    font-size: 1.0638297872vw;
+    font-size: 1.0869565217vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1508,6 +1508,11 @@ header {
   display: block;
   margin-inline: 1.75rem;
 }
+@media (min-width: 768px) and (max-width: 920px) {
+  .p-slider__item {
+    margin-inline: 1.25rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .p-slider__item {
     margin-inline: 0;
@@ -1558,6 +1563,10 @@ header {
   .p-slider__title {
     margin-top: 2.7rem;
   }
+}
+
+.p-slider__name {
+  display: inline-block;
 }
 
 .p-slider__text {
