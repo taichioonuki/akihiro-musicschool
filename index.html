@@ -24,10 +24,12 @@
   <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180">
 
   <!-- Google Fonts -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
@@ -73,7 +75,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="l-main">
     <!-- top-fv -->
     <section class="p-top-fv">
       <div class="p-top-fv__img">
@@ -179,7 +181,7 @@
                 <img src="./images/top/top-voice-image01-sp.jpg" alt="証券会社勤務　丸山さん" loading="lazy">
               </picture>
             </div>
-            <h3 class="p-slider__title">証券会社勤務　丸山さん</h3>
+            <h3 class="p-slider__title">証券会社勤務　<span class="p-slider__name">丸山さん</span></h3>
             <p class="p-slider__text">昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
           </a>
           <a href="./result-details.html" class="p-slider__item">
@@ -189,7 +191,7 @@
                 <img src="./images/top/top-voice-image02-sp.jpg" alt="IT会社勤務　S.Eさん" loading="lazy">
               </picture>
             </div>
-            <h3 class="p-slider__title">IT会社勤務　S.Eさん</h3>
+            <h3 class="p-slider__title">IT会社勤務　<span class="p-slider__name">S.Eさん</span></h3>
             <p class="p-slider__text">プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
           </a>
           <a href="./result-details.html" class="p-slider__item">
@@ -199,7 +201,7 @@
                 <img src="./images/top/top-voice-image03-sp.jpg" alt="都内大学生　田森さん" loading="lazy">
               </picture>
             </div>
-            <h3 class="p-slider__title">都内大学生　田森さん</h3>
+            <h3 class="p-slider__title">都内大学生　<span class="p-slider__name">田森さん</span></h3>
             <p class="p-slider__text">就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
           </a>
           <a href="./result-details.html" class="p-slider__item">
@@ -209,7 +211,7 @@
                 <img src="./images/top/top-voice-image01-sp.jpg" alt="証券会社勤務　丸山さん" loading="lazy">
               </picture>
             </div>
-            <h3 class="p-slider__title">証券会社勤務　丸山さん</h3>
+            <h3 class="p-slider__title">証券会社勤務　<span class="p-slider__name">丸山さん</span></h3>
             <p class="p-slider__text">昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
           </a>
           <a href="./result-details.html" class="p-slider__item">
@@ -219,7 +221,7 @@
                 <img src="./images/top/top-voice-image02-sp.jpg" alt="IT会社勤務　S.Eさん" loading="lazy">
               </picture>
             </div>
-            <h3 class="p-slider__title">IT会社勤務　S.Eさん</h3>
+            <h3 class="p-slider__title">IT会社勤務　<span class="p-slider__name">S.Eさ</span>ん</h3>
             <p class="p-slider__text">プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
           </a>
           <a href="./result-details.html" class="p-slider__item">
@@ -229,7 +231,7 @@
                 <img src="./images/top/top-voice-image03-sp.jpg" alt="都内大学生　田森さん" loading="lazy">
               </picture>
             </div>
-            <h3 class="p-slider__title">都内大学生　田森さん</h3>
+            <h3 class="p-slider__title">都内大学生　<span class="p-slider__name">田森さん</span></h3>
             <p class="p-slider__text">就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
           </a>
         </div>
@@ -391,24 +393,24 @@
       <small class="footer__copyright">Copyright &copy; 0000 KITAMURA music school Inc.<span class="md-none"> </span><br class="md-show">All Rights</small>
       <nav class="footer__icons-nav">
         <ul class="footer__icons">
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-twitter">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-twitter.svg" alt="twitterアイコン" loading="lazy">
+              <img src="./images/icon-twitter.svg" alt="Twitterアイコン" loading="lazy">
             </a>
           </li>
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-facebook">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-facebook.svg" alt="facebookアイコン" loading="lazy">
+              <img src="./images/icon-facebook.svg" alt="Facebookアイコン" loading="lazy">
             </a>
           </li>
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-youtube">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-youtube.svg" alt="youtubeアイコン" loading="lazy">
+              <img src="./images/icon-youtube.svg" alt="YouTubeアイコン" loading="lazy">
             </a>
           </li>
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-instagram">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-instagram.svg" alt="instagramアイコン" loading="lazy">
+              <img src="./images/icon-instagram.svg" alt="Instagramアイコン" loading="lazy">
             </a>
           </li>
         </ul>

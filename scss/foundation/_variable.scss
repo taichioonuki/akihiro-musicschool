@@ -1,7 +1,7 @@
 @use "sass:math";
 
 // 文字フォントの種類
-$base-font: "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+$base-font: "Yu Gothic","游ゴシック体","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro", "Meiryo","Noto Sans JP", sans-serif;
 
 // 文字の太さ
 $regular: 300;
@@ -48,8 +48,4 @@ $mediaqueries: (
 // vw関数
 @function vw($pixelSize, $baseWidth: 880) {
   @return calc($pixelSize / $baseWidth * 100vw);
-}
-
-@function hvw($pixelSize) {
-  @return min(calc($pixelSize / 880 * 100vw), $pixelSize * 1px);
 }

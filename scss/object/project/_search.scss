@@ -1,12 +1,5 @@
 @use "../../foundation/variable" as *;
 
-.p-search{
-    padding-top: hvw(80);
-    @include mq("md"){
-        padding-top: 5rem;
-    }
-}
-
 .p-search-list{
     padding-block: 6.6rem 21rem;
     @include mq("md"){
@@ -24,14 +17,17 @@
 
 .p-search-list__results{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .p-search-list__title{
     font-size: 1.8rem;
     line-height: calc(30/18);
     font-weight: $medium;
+    flex: 1;
 }
 
 .p-search-list__keyword{

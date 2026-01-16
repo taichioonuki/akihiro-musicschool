@@ -36,30 +36,41 @@
     }
 }
 
-.p-top-flow__list::after{
-    content: "";
-    bottom: -1.5rem;
-    left: 1rem;
-    transform: translateX(-50%) rotate(45deg);
-    display: block;
-    position: absolute;
-    width: 2.58rem;
-    height: 2.58rem;
-    border-right: 0.3rem solid $red;
-    border-bottom: 0.3rem solid $red;
-    @include mq("md"){
-        bottom: 1.4rem;
-    }
-}
-
 .p-top-flow__item{
     display: flex;
     align-items: flex-start;
     column-gap: 3rem;
+    position: relative;
     @include mq("md"){
         flex-direction: column;
         row-gap: 0.9rem;
     }
+}
+
+.p-top-flow__item:last-child::before,
+.p-top-flow__item:last-child::after{
+    content: "";
+    bottom: -0.1rem;
+    left: 0%;
+    transform-origin: left center;
+    display: block;
+    position: absolute;
+    width: 2.6rem;
+    height: 0.3rem;
+    background-color: $red;
+    border-top-left-radius: 1.5px;
+    border-bottom-left-radius: 1.5px;
+    @include mq("md"){
+        bottom: 2.5rem;
+    }
+}
+
+.p-top-flow__item:last-child::before{
+    transform: translateX(-28%) rotate(45deg);
+}
+
+.p-top-flow__item:last-child::after{
+    transform: translateX(106%) rotate(135deg);
 }
 
 .p-flow-item__title{

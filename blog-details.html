@@ -24,10 +24,12 @@
   <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180">
 
   <!-- Google Fonts -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
@@ -73,7 +75,7 @@
     </div>
   </header>
 
-  <main class="p-blog-details">
+  <main class="p-blog-details l-main">
     <!-- パンくずリスト -->
     <div class="c-breadcrumb">
       <div class="l-inner c-breadcrumb__inner">
@@ -153,7 +155,7 @@
               <span class="p-blog-body__quotation">
                 <img src="./images/blog-details/icon-blockquote.svg" alt="ダブルクォーテーションマーク" loading="lazy">
               </span>
-              <p class="p-blog-body__text p-blog-body__quotetext">本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+              <p class="p-blog-body__quotetext">本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
             </blockquote>
             <div class="p-blog-body__linkarea">
               <a href="./404.html" class="p-blog-body__link" target="_blank" rel="noopener noreferrer">テキストリンク</a>
@@ -237,17 +239,17 @@
       </div>
       <!-- サイドバーエリア -->
       <aside class="l-sidebar-container p-blog-details__sidebar p-sidebar">
-        <section class="p-sidebar-magazine p-sidebar-section">
-          <h2 class="p-sidebar-section__title">無料メールマガジン</h2>
+        <div class="p-sidebar-magazine p-sidebar-section">
+          <p class="p-sidebar-section__title">無料メールマガジン</p>
           <div class="p-sidebar-magazine__contents">
             <a href="./404.html" class="p-sidebar-magazine__link" target="_blank" rel="noopener noreferrer">
               <img src="./images/blog-details/blog-banner-image.jpg" alt="ブログバナー広告" loading="lazy">
               <p class="p-sidebar-magazine__text">バナー広告</p>
             </a>
           </div>
-        </section>
-        <section class="p-seidebar-search p-sidebar-section">
-          <h2 class="p-sidebar-section__title">ブログ内を検索</h2>
+        </div>
+        <div class="p-seidebar-search p-sidebar-section">
+          <p class="p-sidebar-section__title">ブログ内を検索</p>
           <div class="p-sidebar-search__contents">
             <form action="./search.html" class="p-sidebar-search__form">
               <input class="p-sidebar-search__input" type="search" placeholder="">
@@ -256,9 +258,9 @@
               </button>
             </form>
           </div>
-        </section>
-        <section class="p-sidebar-recommend p-sidebar-section">
-          <h2 class="p-sidebar-section__title">おすすめの記事</h2>
+        </div>
+        <div class="p-sidebar-recommend p-sidebar-section">
+          <p class="p-sidebar-section__title">おすすめの記事</p>
           <div class="p-sidebar-recommend__contents">
             <ul class="p-sidebar-recommend__list">
               <li class="p-sidebar-recommend__item p-recommend-item">
@@ -267,7 +269,7 @@
                     <img src="./images/blog-details/blog-recommend-image.jpg" alt="おすすめ記事画像" loading="lazy">
                   </div>
                   <div class="p-recommend-item__titlearea">
-                    <h3 class="p-recommend-item__title">タイトルが入ります。タイトルが入ります。</h3>
+                    <p class="p-recommend-item__title">タイトルが入ります。タイトルが入ります。</p>
                   </div>
                 </a>
               </li>
@@ -277,7 +279,7 @@
                     <img src="./images/blog-details/blog-recommend-image.jpg" alt="おすすめ記事画像" loading="lazy">
                   </div>
                   <div class="p-recommend-item__titlearea">
-                    <h3 class="p-recommend-item__title">タイトルが入ります。タイトルが入ります。</h3>
+                    <p class="p-recommend-item__title">タイトルが入ります。タイトルが入ります。</p>
                   </div>
                 </a>
               </li>
@@ -287,15 +289,15 @@
                     <img src="./images/blog-details/blog-recommend-image.jpg" alt="おすすめ記事画像" loading="lazy">
                   </div>
                   <div class="p-recommend-item__titlearea">
-                    <h3 class="p-recommend-item__title">タイトルが入ります。タイトルが入ります。</h3>
+                    <p class="p-recommend-item__title">タイトルが入ります。タイトルが入ります。</p>
                   </div>
                 </a>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="p-sidebar-category p-sidebar-section">
-          <h2 class="p-sidebar-section__title">カテゴリー</h2>
+        </div>
+        <div class="p-sidebar-category p-sidebar-section">
+          <p class="p-sidebar-section__title">カテゴリー</p>
           <div class="p-sidebar-category__contents">
             <ul class="p-sidebar-category__list">
               <li class="p-sidebar-category__item p-category-item">
@@ -315,7 +317,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
       </aside>
     </div>
     <!-- return-button -->
@@ -352,24 +354,24 @@
       <small class="footer__copyright">Copyright &copy; 0000 KITAMURA music school Inc.<span class="md-none"> </span><br class="md-show">All Rights</small>
       <nav class="footer__icons-nav">
         <ul class="footer__icons">
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-twitter">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-twitter.svg" alt="twitterアイコン" loading="lazy">
+              <img src="./images/icon-twitter.svg" alt="Twitterアイコン" loading="lazy">
             </a>
           </li>
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-facebook">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-facebook.svg" alt="facebookアイコン" loading="lazy">
+              <img src="./images/icon-facebook.svg" alt="Facebookアイコン" loading="lazy">
             </a>
           </li>
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-youtube">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-youtube.svg" alt="youtubeアイコン" loading="lazy">
+              <img src="./images/icon-youtube.svg" alt="YouTubeアイコン" loading="lazy">
             </a>
           </li>
-          <li class="footer__icon">
+          <li class="footer__icon footer__icon-instagram">
             <a href="./404.html" class="footer__icon-link" target="_blank" rel="noopener noreferrer">
-              <img src="./images/icon-instagram.svg" alt="instagramアイコン" loading="lazy">
+              <img src="./images/icon-instagram.svg" alt="Instagramアイコン" loading="lazy">
             </a>
           </li>
         </ul>

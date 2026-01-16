@@ -6,7 +6,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    height: hvw(80);
+    height: 8rem;
     background-color: $white;
     transition: background-color 0.3s;
     @include mq("md"){
@@ -21,7 +21,7 @@ header{
 .header__inner{
     max-width: 920px;
     margin-inline: auto;
-    padding-inline: 2rem;
+    padding-inline: 20px;
     display: flex;
     height: inherit;
     align-items: center;
@@ -34,7 +34,7 @@ header{
 .header__name-link{
     height: inherit;
     position: relative;
-    padding-left: hvw(42);
+    padding-left: 4.2rem;
     font-size: 2rem;
     font-weight: $bold;
     color: $black;
@@ -238,7 +238,6 @@ header{
 }
 
 .drawer-menu__inner{
-    width: 100%;
     height: inherit;
     display: flex;
     align-items: center;

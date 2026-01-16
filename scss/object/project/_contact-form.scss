@@ -42,10 +42,10 @@
 }
 
 .p-form__label{
-    margin-top: 0.4rem;
+    padding-top: 0.4rem;
     width: 16rem;
     @include mq("md"){
-        margin-top: 0;
+        padding-top: 0;
         width: 100%;
     }
 }
@@ -87,7 +87,7 @@
 
 // チェックボックス
 .p-checkbox__label{
-    margin-top: 0;
+    padding-top: 0;
 }
 
 .p-checkbox-label__text{
@@ -105,7 +105,6 @@
 }
 
 .p-form-data__checkbox{
-    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -168,16 +167,16 @@
 }
 
 .p-textarea__label{
-    margin-top: 0.7rem;
+    padding-top: 0.7rem;
     @include mq("md"){
-        margin-top: 0;
+        padding-top: 0;
     }
 }
 
 .p-form__textarea {
     font-size: 1.8rem;
     min-height: 30rem;
-    resize: vertical;
+    resize: none;
     display: block;
     line-height: calc(30/18);
     padding: 1.25rem 1.95rem;

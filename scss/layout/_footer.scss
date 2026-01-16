@@ -8,16 +8,11 @@
     }
 }
 
-.footer__inner{
-    max-width: 782px;
-}
-
 .footer__nav-items{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 3.3rem;
-    row-gap: 5px;
+    row-gap: 0.5rem;
     text-align: center;
     justify-content: center;
     @include mq("md"){
@@ -26,6 +21,7 @@
 }
 
 .footer__link{
+    display: block;
     font-size: 1.7rem;
     font-weight: $bold;
     line-height: calc(33/17);
@@ -70,4 +66,20 @@
 
 .footer__icon-link{
     display: block;
+}
+
+.footer__icon-twitter .footer__icon-link{
+    width: 2.3rem;
+}
+
+.footer__icon-facebook .footer__icon-link{
+    width: 2.3rem;
+}
+
+.footer__icon-youtube .footer__icon-link{
+    width: 2.3rem;
+}
+
+.footer__icon-instagram .footer__icon-link{
+    width: 2rem;
 }

@@ -10,7 +10,7 @@
 .p-top-message__inner{
     max-width: 898px;
     margin-inline: auto;
-    padding-inline: 2rem;
+    padding-inline: 20px;
 }
 
 .p-top-message__title{
@@ -30,6 +30,7 @@
     text-align: center;
     @include mq("md"){
         margin-top: 0.7rem;
+        text-align: left;
     }
 }
 
@@ -82,20 +83,30 @@
     background-color: $red;
 }
 
-.p-message-item:last-child .p-message-item__circle::before{
+.p-message-item:first-child .p-message-item__circle::before,
+.p-message-item:first-child .p-message-item__circle::after{
     content: "";
-    top: -17.2rem; /* 矢印長さ18.5emー円の半径1remー矢印太さ0.3rem */
+    top: -2.3rem;
     left: 50%;
-    transform: translateX(-50%) rotate(-45deg);
+    transform-origin: left center;
     display: block;
     position: absolute;
-    width: 2.58rem;
-    height: 2.58rem;
-    border-right: 0.3rem solid $red;
-    border-top: 0.3rem solid $red;
+    width: 2.6rem;
+    height: 0.3rem;
+    background-color: $red;
+    border-top-left-radius: 1.5px;
+    border-bottom-left-radius: 1.5px;
     @include mq("md"){
-        top: -17.8rem;
+        top: -3rem;
     }
+}
+
+.p-message-item:first-child .p-message-item__circle::before{
+    transform: translateX(-67%) rotate(-45deg);
+}
+
+.p-message-item:first-child .p-message-item__circle::after{
+    transform: translateX(67%) rotate(-135deg);
 }
 
 .p-message-item:last-child .p-message-item__circle::after{
